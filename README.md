@@ -1029,7 +1029,7 @@ select s1.sname from sailors s1 where s1.sid
 not in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red'));
 ```
 
-### Correlational Queries
+### Correlated Query
 
 ```sql
 -- Find the names of sailors who have reserved boat number 103
